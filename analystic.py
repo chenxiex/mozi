@@ -67,8 +67,8 @@ with open(r'infection_flows.csv','r',newline='',encoding='utf-8') as f:
     #找出所有top_10中的数据
     top_10_data=[row for row in reader if row[0] in top_10_source_ip]
 
-#写入top10_infection_flows.csv
-with open(r'top10_infection_flows.csv','w',newline='',encoding='utf-8') as f:
+#写入top_10_infection_flows.csv
+with open(r'top_10_infection_flows.csv','w',newline='',encoding='utf-8') as f:
     writer=csv.writer(f)
     writer.writerow(header)
     writer.writerows(top_10_data)
